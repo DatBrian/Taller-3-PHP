@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactoCampers,
+.campusCampers,
+.nivelesCampers,
+.contactoTrainers,
+.campusTrainers,
+.nivelesTrainers,
+.contacto,
+.sedesSection,
+.nivelesSection,
+.tecnologiasSection,
+.teamsSection,
+.roadMapSection {
+    display: none;
+}
+
+.softwareSkills,
+.claseIngles,
+.claseSer {
+    display: none;
+}
+
+.lunesC,
+.martesC,
+.miercolesC,
+.juevesC,
+.viernesC,
+.lunesIC,
+.martesIC,
+.miercolesIC,
+.juevesIC,
+.viernesIC,
+.lunesSC,
+.martesSC,
+.miercolesSC,
+.juevesSC,
+.viernesSC,
+.lunesT,
+.martesT,
+.miercolesT,
+.juevesT,
+.viernesT {
+    display: none;
+}
+
+.diasC,
+.diasIC,
+.diasSC {
+    display: none;
+}
