@@ -24,30 +24,27 @@ const tecnologiasSection = document.querySelector('.tecnologiasSection');
 const teamsSection = document.querySelector('.teamsSection');
 const roadMapSection = document.querySelector('.roadMapSection');
 
+//Mostrar y ocultar secciones
+
 añadir.addEventListener('change', (e) => {
     e.preventDefault();
     let valorOption = añadir.value;
 
     switch (valorOption) {
         case "sedes":
-            sedesSection.style.display = "block";
-            primerPaso.style.display = "none";
+            showSections(primerPaso, sedesSection);
             break;
         case "niveles":
-            nivelesSection.style.display = "block";
-            primerPaso.style.display = "none";
+            showSections(primerPaso, nivelesSection);
             break;
         case "tecnologias":
-            tecnologiasSection.style.display = "block";
-            primerPaso.style.display = "none";
+            showSections(primerPaso, tecnologiasSection);
             break;
         case "teams":
-            teamsSection.style.display = "block";
-            primerPaso.style.display = "none";
+            showSections(primerPaso, teamsSection);
             break;
         case "roadMap":
-            roadMapSection.style.display = "block";
-            primerPaso.style.display = "none";
+            showSections(primerPaso, roadMapSection);
             break;
         default:
             break;
@@ -67,26 +64,25 @@ const previous3 = document.querySelector('.previous3');
 
 //Botón primera sección campers
 next1.addEventListener("click", (e) => {
-    e.preventDefault();
-    contactoCampers.style.display = "none";
-    campusCampers.style.display = "block";
+    showSections(contactoCampers, campusCampers);
 })
 previous1.addEventListener("click", (e) => {
-    e.preventDefault();
-    contactoCampers.style.display = "none";
-    primerPaso.style.display = "block";
+    showSections(contactoCampers, primerPaso);
 })
 //Botón primera seccion campers
 //Botón segunda sección campers
 next2.addEventListener("click", (e) => {
-    e.preventDefault();
-    campusCampers.style.display = "none";
-    nivelesCampers.style.display = "block";
+    showSections(campusCampers, nivelesCampers);
 })
 previous2.addEventListener("click", (e) => {
-    e.preventDefault();
-    campusCampers.style.display = "none";
-    contactoCampers.style.display = "block";
+    showSections(campusCampers, contactoCampers);
 });
+
+//Funciones
+
+function showSections(sec1, sec2) {
+    sec1.style.display = "none";
+    sec2.style.display = "block";
+}
 
 
